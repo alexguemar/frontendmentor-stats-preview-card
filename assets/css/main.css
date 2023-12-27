@@ -1,0 +1,125 @@
+:root {
+  --c-dark-blue-900: hsl(233, 47%, 7%);
+  --c-dark-blue-700: hsl(244, 38%, 16%);
+  --c-purple-: hsl(277, 64%, 61%);
+  --c-white: hsl(0, 0%, 100%);
+  --c-white-75: hsla(0, 0%, 100%, 0.75);
+  --c-white-60: hsla(0, 0%, 100%, 0.6);
+  --f-family-inter: "Inter", sans-serif;
+  --f-family-lexend: "Lexend Deca", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  background-color: var(--c-dark-blue-900);
+  color: var(--c-white);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--f-family-inter);
+  line-height: 25px;
+}
+
+img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.card {
+  background-color: var(--c-dark-blue-700);
+  width: 100%;
+  max-width: 375px;
+  text-align: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 40px 2rem 2rem;
+}
+.card-title {
+  margin-bottom: 1rem;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.card-text {
+  margin-bottom: 2.5rem;
+  font-size: 15px;
+}
+.card-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.card-skills .card-skills-number {
+  margin-bottom: 0.2rem;
+  font-size: 25px;
+  font-weight: 700;
+}
+.card-skills .card-skills-name {
+  font-size: 13.5px;
+  text-transform: uppercase;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 1110px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .card picture {
+    width: 48.75%;
+  }
+
+  .card picture img {
+    object-fit: cover;
+  }
+
+  .card-content {
+    flex: 1;
+    padding: 4.375rem 7.5rem 3.75rem 4.375rem;
+  }
+
+  .card-content .card-title {
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: normal;
+  }
+
+  .card-content .card-text {
+    margin-bottom: 4.5rem;
+  }
+
+  .card-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
