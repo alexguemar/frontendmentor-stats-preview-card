@@ -20,7 +20,7 @@ Users should be able to:
 ### 🔗 Links
 
 - Solution URL - Github: [Add solution URL here](https://github.com/alexguemar/frontendmentor-nft-preview-card)
-- Live Site URL - Vercel: [Add live site URL here](https://frontendmentor-nft-preview-card-six.vercel.app/)
+- Live Site URL - Vercel: [Add live site URL here](https://frontendmentor-stats-preview-card-three.vercel.app/)
 
 ## 🚀 My process
 
